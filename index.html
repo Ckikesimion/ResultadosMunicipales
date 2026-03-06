@@ -61,10 +61,7 @@
                 <div id="popup-content"></div>
             </div>
 		<div id="map">
-    <div id="etiqueta-belice" style="background: rgba(255,255,255,0.85); padding: 5px; border: 1px solid #002060; border-radius: 4px; width: 110px; text-align: center; font-family: sans-serif; font-size: 10px; font-weight: bold; color: #002060; display: none;">
-        Diferendo territorial, insular y marítimo, pendiente de resolver.
-    </div>
-    <div id="popup" class="ol-popup">
+     <div id="popup" class="ol-popup">
         <a href="#" id="popup-closer" class="ol-popup-closer"></a>
         <div id="popup-content"></div>
     </div>
@@ -82,20 +79,10 @@
         <script src="./resources/qgis2web.js"></script>
 		<script>
    <script>
-    <script>
-    setTimeout(function() {
-        var overlay = new ol.Overlay({
-            element: document.getElementById('etiqueta-belice'),
-            position: ol.proj.fromLonLat([-88.4976, 17.1899]),
-            positioning: 'center-center'
-        });
-        map.addOverlay(overlay);
-        document.getElementById('etiqueta-belice').style.display = 'block';
-    }, 2000); // 2 segundos para asegurar que el mapa cargó
-</script>
 </script>
     </body>
 </html>
+
 
 
 
