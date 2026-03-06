@@ -73,9 +73,22 @@
         <script src="styles/ResultadoFsico_Siplangl_0_style.js"></script><script src="styles/Resultado_PresupuestarioSiplangl_1_style.js"></script><script src="styles/blz_admin0_2_style.js"></script>
         <script src="./layers/layers.js" type="text/javascript"></script> 
         <script src="./resources/Autolinker.min.js"></script>
-        <script src="./resources/qgis2web.js"></script>        
+        <script src="./resources/qgis2web.js"></script>
+		<script>
+    var posBelice = ol.proj.fromLonLat([-88.4976, 17.1899]);
+    var overlayBelice = new ol.Overlay({
+        position: posBelice,
+        positioning: 'center-center',
+        element: document.getElementById('etiqueta-belice'),
+        stopEvent: false
+    });
+    // Esperar a que el mapa cargue para añadir el overlay
+    map.addOverlay(overlayBelice);
+    document.getElementById('etiqueta-belice').style.display = 'block';
+</script>
     </body>
 </html>
+
 
 
 
