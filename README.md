@@ -1,7 +1,7 @@
 # Resultados Municipales 2025
-Se muestra el resultado físico y financiero por municipio
+Muestra el resultado físico y presupuestario de los municipios del pais Guatemala.
 
-Este proyecto presenta una visualización interactiva de los resultados físicos y financieros a nivel municipal para el año 2025. Ha sido generado utilizando **QGIS** y el plugin **qgis2web**, integrando datos geoespaciales críticos para la toma de decisiones.
+Este proyecto presenta una visualización interactiva de los resultados físicos y presupestarios a nivel municipal para el año 2025. Ha sido generado utilizando **QGIS** y el plugin **qgis2web**, integrando datos geoespaciales críticos para la toma de decisiones.
 
 ## 📍 Visualización del Diferendo Territorial
 El mapa incluye una etiqueta especial sobre el territorio de **Belice**, detallando el estado actual del Diferendo territorial, insular y marítimo, pendiente de resolver.
