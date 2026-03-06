@@ -1,4 +1,4 @@
-# ResultadosMunicipales
+# Resultados Municipales 2025
 Se muestra el resultado físico y financiero por municipio
 
 Este proyecto presenta una visualización interactiva de los resultados físicos y financieros a nivel municipal para el año 2025. Ha sido generado utilizando **QGIS** y el plugin **qgis2web**, integrando datos geoespaciales críticos para la toma de decisiones.
