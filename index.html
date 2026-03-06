@@ -46,9 +46,6 @@
         <title></title>
     </head>
     <body>
-	<div id="etiqueta-belice" style="background: rgba(255,255,255,0.7); padding: 5px; border: 1px solid #002060; border-radius: 4px; width: 100px; text-align: center; font-family: sans-serif; font-size: 9px; font-weight: bold; color: #002060;">
-    Diferendo territorial, insular y marítimo, pendiente de resolver.
-</div>
 <div style="position: absolute; top: 10px; left: 100px; z-index: 1000; background: white; padding: 10px; border: 2px solid rgb(0,32,96); border-radius: 5px;">
    	 <h1 style="margin: 0; font-size: 18px; rgb(0,32,96); font-family: sans-serif;">MAPA DE RESULTADO MUNICIPAL 2025</h1>
 	</div>
@@ -63,6 +60,15 @@
                 <a href="#" id="popup-closer" class="ol-popup-closer"></a>
                 <div id="popup-content"></div>
             </div>
+		<div id="map">
+    <div id="etiqueta-belice" style="background: rgba(255,255,255,0.85); padding: 5px; border: 1px solid #002060; border-radius: 4px; width: 110px; text-align: center; font-family: sans-serif; font-size: 10px; font-weight: bold; color: #002060; display: none;">
+        Diferendo territorial, insular y marítimo, pendiente de resolver.
+    </div>
+    <div id="popup" class="ol-popup">
+        <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+        <div id="popup-content"></div>
+    </div>
+</div>		
         </div>
         <script src="resources/qgis2web_expressions.js"></script>
         <script src="./resources/functions.js"></script>
@@ -75,19 +81,22 @@
         <script src="./resources/Autolinker.min.js"></script>
         <script src="./resources/qgis2web.js"></script>
 		<script>
-    var posBelice = ol.proj.fromLonLat([-88.4976, 17.1899]);
-    var overlayBelice = new ol.Overlay({
-        position: posBelice,
-        positioning: 'center-center',
-        element: document.getElementById('etiqueta-belice'),
-        stopEvent: false
-    });
-    // Esperar a que el mapa cargue para añadir el overlay
-    map.addOverlay(overlayBelice);
-    document.getElementById('etiqueta-belice').style.display = 'block';
+   <script>
+    <script>
+    setTimeout(function() {
+        var overlay = new ol.Overlay({
+            element: document.getElementById('etiqueta-belice'),
+            position: ol.proj.fromLonLat([-88.4976, 17.1899]),
+            positioning: 'center-center'
+        });
+        map.addOverlay(overlay);
+        document.getElementById('etiqueta-belice').style.display = 'block';
+    }, 2000); // 2 segundos para asegurar que el mapa cargó
+</script>
 </script>
     </body>
 </html>
+
 
 
 
