@@ -7,9 +7,10 @@ Este proyecto presenta una visualización interactiva de los resultados físicos
 El mapa incluye una etiqueta especial sobre el territorio de **Belice**, detallando el estado actual del Diferendo territorial, insular y marítimo, pendiente de resolver.
 
 ## 🛠️ Características del Mapa
-* **Capas de Información**: Permite alternar entre el **Resultado Financiero** y el **Resultado Físico** por municipio.
+* **Capas de Información**: Permite alternar entre el **Resultado presupuestario** y el **Resultado Físico** por municipio.
 * **Interactividad**: Incluye pop-ups con información detallada al hacer clic en cada área.
 * **Acceso Permanente**: Publicado a través de **GitHub Pages** para garantizar su disponibilidad sin límites de tiempo.
+* Fuente: Resultados físicos y presupuestarios de Siplangl.
 
 ## 📂 Estructura del Proyecto
 Para que el mapa funcione correctamente, se ha mantenido la siguiente estructura de archivos:
